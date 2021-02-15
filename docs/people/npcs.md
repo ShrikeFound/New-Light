@@ -8,7 +8,7 @@ Wife of Ezra
 
 Protector of the Land of Burning Water and father to Corvus. Assigned Elyssa to C team
 
-## Nahim the Eartheater
+## Nahim Eartheater
 
 Keeper of Shabara
 
@@ -16,15 +16,15 @@ Keeper of Shabara
 
 Leader of House Haolus and Father of Baolo
 
-## Atle the Bleeding God
+## Atle Bleeding God
 
 God and Ruler of Athon. God of Ezra.
 
-## Ibril the Blooming Feather
+## Ibril Blooming Feather
 
 Ruler of Sochitlan and high empress of the Sea Ringed World.
 
-## Niva the Light Eater
+## Niva Light Eater
 
 Ruler of Tyr and head of the Order of Light.
 
