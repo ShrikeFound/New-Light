@@ -1,0 +1,19 @@
+- People
+  - [C Team](people/main_characters.md)
+  - [NPCs](people/npcs.md)
+- Places
+  - [The Great Lake](places/great_lake.md)
+  - [The Iron Desert](places/iron_desert.md)
+  - [The Western Teeth](places/western_teeth.md)
+  - [The Eastern Teeth](places/eastern_teeth.md)
+  - [The Land of the Singing Stones](places/singing_stones.md)
+  - [The Burnished Plains](places/burnished_plains.md)
+  - [The Land of Burning Water](places/burning_water.md)
+  - [Shabara](places/shabara.md)
+- Things
+  - [Artifacts](things/artifacts)
+- Factions
+  - [The Ruling Cities](factions/ruling_cities.md)
+  - [The Tributaries](factions/tributaries.md)
+  - [Unallied Factions](factions/other_factions.md)
+- Rules
