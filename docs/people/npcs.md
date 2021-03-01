@@ -5,6 +5,8 @@ Wife of Ezra
 
 ![Dottice](../images/dottice.jpg ':size=300px')
 
+Last seen in Sochitlan after Ezra gave her his teleporting device.
+
 ## Rask the Shorn One
 
 Protector of the Land of Burning Water and father to Corvus. Assigned Elyssa to C team
