@@ -36,8 +36,9 @@ code {
 #burning-water,
 #tyr,
 #shabara,
-#burnished-plains {
-  transition: all ease-in-out 400ms;
+#burnished-plains,
+polygon {
+  transition: all ease-in-out 1s;
 }
 #athon {
   fill: rgba(161, 0, 0, 0.5);
@@ -96,7 +97,5 @@ code {
 }
 
 #sochitlan-capital:hover {
-  fill: red;
-  stroke: rgba(0, 0, 0, 0.5);
-  stroke-width: 2;
+  fill: black;
 }
