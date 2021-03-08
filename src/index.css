@@ -12,10 +12,8 @@ code {
     monospace;
 }
 #sea-ringed-world {
-  width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
-  display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 #sochitlan-nation,
 #tyr-nation,
@@ -25,23 +23,13 @@ code {
 #burnished-plains-nation,
 #shabara-nation {
   fill: rgba(255, 255, 255, 1);
-  /* stroke: rgba(0, 0, 0, 0.9);
-  stroke-width: 2; */
-  transition: all ease-in-out 300ms;
 }
 
-#athon,
-#sochitlan,
-#iwitlan,
-#burning-water,
-#tyr,
-#shabara,
-#burnished-plains,
 polygon {
-  transition: all ease-in-out 1s;
+  transition: all ease-in-out 300ms;
 }
 #athon {
-  fill: rgba(161, 0, 0, 0.5);
+  fill: rgba(161, 0, 0, 0.7);
 }
 #athon:hover,
 #athon-nation:hover ~ #athon {
@@ -49,7 +37,7 @@ polygon {
 }
 
 #sochitlan {
-  fill: rgba(236, 177, 0, 0.5);
+  fill: rgba(236, 177, 0, 0.7);
 }
 #sochitlan:hover,
 #sochitlan-nation:hover ~ #sochitlan {
@@ -57,7 +45,7 @@ polygon {
 }
 
 #iwitlan {
-  fill: rgba(0, 100, 0, 0.5);
+  fill: rgba(0, 100, 0, 0.7);
 }
 #iwitlan:hover,
 #iwitlan-nation:hover ~ #iwitlan {
@@ -65,7 +53,7 @@ polygon {
 }
 
 #tyr {
-  fill: rgba(100, 100, 100, 0.5);
+  fill: rgba(100, 100, 100, 0.7);
 }
 #tyr:hover,
 #tyr-nation:hover ~ #tyr {
@@ -73,7 +61,7 @@ polygon {
 }
 
 #burning-water {
-  fill: rgba(0, 128, 128, 0.5);
+  fill: rgba(0, 128, 128, 0.7);
 }
 #burning-water:hover,
 #burning-water-nation:hover ~ #burning-water {
@@ -81,7 +69,7 @@ polygon {
 }
 
 #burnished-plains {
-  fill: rgba(70, 130, 180, 0.5);
+  fill: rgba(70, 130, 180, 0.7);
 }
 #burnished-plains:hover,
 #burnished-plains-nation:hover ~ #burnished-plains {
@@ -89,13 +77,20 @@ polygon {
 }
 
 #shabara {
-  fill: rgba(40, 40, 40, 0.5);
+  fill: rgba(40, 40, 40, 0.7);
 }
 #shabara:hover,
 #shabara-nation:hover ~ #shabara {
   fill: rgba(40, 40, 40, 1);
 }
 
-#sochitlan-capital:hover {
-  fill: black;
+.container {
+  margin-top: 3rem;
+  width: 90%;
+  max-width: 960px;
+  height: 100vh;
+  max-height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
 }
