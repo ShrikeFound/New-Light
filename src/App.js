@@ -5,10 +5,9 @@ import Map from './components/Map.js'
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <Map/>
-      </div>
-    
+
+      <Map/>
+
     </div>
   );
 }

@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
 }
 
 code {
@@ -12,6 +14,7 @@ code {
     monospace;
 }
 #sea-ringed-world {
+  width: 100%;
   max-width: 100%;
   max-height: 100%;
 }
@@ -22,75 +25,102 @@ code {
 #burning-water-nation,
 #burnished-plains-nation,
 #shabara-nation {
-  fill: rgba(255, 255, 255, 1);
+  fill: rgba(80,80,80,.6);
+  /* stroke: rgba(100,100,200,.8); */
+  /* stroke-width: 3; */
 }
 
 polygon {
-  transition: all ease-in-out 300ms;
+  transition: all ease-in 300ms;
+}
+
+/* svg group fill and hover */
+#athon,#sochitlan,#tyr,#iwitlan,#burning-water,#burnished-plains,#shabara{
+  stroke-width: 0;
 }
 #athon {
-  fill: rgba(161, 0, 0, 0.7);
-}
-#athon:hover,
-#athon-nation:hover ~ #athon {
   fill: rgba(161, 0, 0, 1);
 }
 
 #sochitlan {
-  fill: rgba(236, 177, 0, 0.7);
-}
-#sochitlan:hover,
-#sochitlan-nation:hover ~ #sochitlan {
   fill: rgba(236, 177, 0, 1);
 }
 
+
 #iwitlan {
-  fill: rgba(0, 100, 0, 0.7);
-}
-#iwitlan:hover,
-#iwitlan-nation:hover ~ #iwitlan {
   fill: rgba(0, 100, 0, 1);
 }
 
+
 #tyr {
-  fill: rgba(100, 100, 100, 0.7);
-}
-#tyr:hover,
-#tyr-nation:hover ~ #tyr {
-  fill: rgba(100, 100, 100, 1);
+  fill: rgba(220, 220, 220, 1);
 }
 
 #burning-water {
-  fill: rgba(0, 128, 128, 0.7);
-}
-#burning-water:hover,
-#burning-water-nation:hover ~ #burning-water {
   fill: rgba(0, 128, 128, 1);
 }
 
 #burnished-plains {
-  fill: rgba(70, 130, 180, 0.7);
-}
-#burnished-plains:hover,
-#burnished-plains-nation:hover ~ #burnished-plains {
   fill: rgba(70, 130, 180, 1);
 }
 
 #shabara {
-  fill: rgba(40, 40, 40, 0.7);
-}
-#shabara:hover,
-#shabara-nation:hover ~ #shabara {
   fill: rgba(40, 40, 40, 1);
 }
-
 .container {
   margin-top: 3rem;
   width: 90%;
-  max-width: 960px;
-  height: 100vh;
-  max-height: 800px;
+  max-width: 1160px;
+  height: 90vh;
+  max-height: 90vh;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid black;
+  flex-wrap: wrap;
+  gap: 5%;
 }
+.map-feature{
+  stroke: white;
+  stroke-width: 5;
+}
+.map-feature:hover{
+  fill: #000;
+}
+
+
+.legend{
+  /* width: 90%; */
+  margin: 0 auto;
+}
+.legend .title{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.legend .description{
+  line-height: 1.7;
+}
+
+
+@media only screen and (min-width: 600px){
+  .md-flex{
+    display: flex;
+  }
+
+
+  .legend-column {
+    width: 40%;
+    min-width: 300px;
+  }
+  .map-column{
+    width: 55%;
+    align-self: center;
+  }
+}
+
+#world  g:not(:hover) > polygon{
+  fill: rgba(80,80,80,.6);
+  stroke: rgba(0,0,0,0);
+}
+/* 
+#world:hover  g:not(:hover) > polygon{
+  fill: rgba(0,0,0,.8);
+} */
