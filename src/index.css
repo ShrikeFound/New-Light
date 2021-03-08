@@ -1,13 +1,102 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+#sea-ringed-world {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: block;
+}
+#sochitlan-nation,
+#tyr-nation,
+#athon-nation,
+#iwitlan-nation,
+#burning-water-nation,
+#burnished-plains-nation,
+#shabara-nation {
+  fill: rgba(255, 255, 255, 1);
+  /* stroke: rgba(0, 0, 0, 0.9);
+  stroke-width: 2; */
+  transition: all ease-in-out 300ms;
+}
+
+#athon,
+#sochitlan,
+#iwitlan,
+#burning-water,
+#tyr,
+#shabara,
+#burnished-plains {
+  transition: all ease-in-out 400ms;
+}
+#athon {
+  fill: rgba(161, 0, 0, 0.5);
+}
+#athon:hover,
+#athon-nation:hover ~ #athon {
+  fill: rgba(161, 0, 0, 1);
+}
+
+#sochitlan {
+  fill: rgba(236, 177, 0, 0.5);
+}
+#sochitlan:hover,
+#sochitlan-nation:hover ~ #sochitlan {
+  fill: rgba(236, 177, 0, 1);
+}
+
+#iwitlan {
+  fill: rgba(0, 100, 0, 0.5);
+}
+#iwitlan:hover,
+#iwitlan-nation:hover ~ #iwitlan {
+  fill: rgba(0, 100, 0, 1);
+}
+
+#tyr {
+  fill: rgba(100, 100, 100, 0.5);
+}
+#tyr:hover,
+#tyr-nation:hover ~ #tyr {
+  fill: rgba(100, 100, 100, 1);
+}
+
+#burning-water {
+  fill: rgba(0, 128, 128, 0.5);
+}
+#burning-water:hover,
+#burning-water-nation:hover ~ #burning-water {
+  fill: rgba(0, 128, 128, 1);
+}
+
+#burnished-plains {
+  fill: rgba(70, 130, 180, 0.5);
+}
+#burnished-plains:hover,
+#burnished-plains-nation:hover ~ #burnished-plains {
+  fill: rgba(70, 130, 180, 1);
+}
+
+#shabara {
+  fill: rgba(40, 40, 40, 0.5);
+}
+#shabara:hover,
+#shabara-nation:hover ~ #shabara {
+  fill: rgba(40, 40, 40, 1);
+}
+
+#sochitlan-capital:hover {
+  fill: red;
+  stroke: rgba(0, 0, 0, 0.5);
+  stroke-width: 2;
 }
