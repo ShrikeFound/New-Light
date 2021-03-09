@@ -18,15 +18,15 @@ code {
   max-width: 100%;
   max-height: 100%;
 }
-#sochitlan-nation,
-#tyr-nation,
-#athon-nation,
-#iwitlan-nation,
-#burning-water-nation,
-#burnished-plains-nation,
-#shabara-nation {
-  fill: rgba(80,80,80,.6);
-  /* stroke: rgba(100,100,200,.8); */
+#sochitlan-outline,
+#tyr-outline,
+#athon-outline,
+#iwitlan-outline,
+#elyss-outline,
+#burnished-plains-outline,
+#shabara-outline {
+  fill: rgba(250, 250, 250, 0);
+  /* stroke: black; */
   /* stroke-width: 3; */
 }
 
@@ -35,10 +35,19 @@ polygon {
 }
 
 /* svg group fill and hover */
-#athon,#sochitlan,#tyr,#iwitlan,#burning-water,#burnished-plains,#shabara{
+#athon,
+#sochitlan,
+#tyr,
+#iwitlan,
+#elyss,
+#burnished-plains,
+#shabara {
   stroke-width: 0;
+  stroke: none;
+  fill: rgba(255, 255, 255, 0.9);
 }
-#athon {
+
+/* #athon {
   fill: rgba(161, 0, 0, 1);
 }
 
@@ -46,17 +55,15 @@ polygon {
   fill: rgba(236, 177, 0, 1);
 }
 
-
 #iwitlan {
   fill: rgba(0, 100, 0, 1);
 }
-
 
 #tyr {
   fill: rgba(220, 220, 220, 1);
 }
 
-#burning-water {
+#elyss {
   fill: rgba(0, 128, 128, 1);
 }
 
@@ -66,7 +73,8 @@ polygon {
 
 #shabara {
   fill: rgba(40, 40, 40, 1);
-}
+} */
+
 .container {
   margin-top: 3rem;
   width: 90%;
@@ -78,49 +86,55 @@ polygon {
   flex-wrap: wrap;
   gap: 5%;
 }
-.map-feature{
+.map-feature {
   stroke: white;
   stroke-width: 5;
 }
-.map-feature:hover{
+.map-feature:hover {
   fill: #000;
 }
 
-
-.legend{
+.legend {
   /* width: 90%; */
   margin: 0 auto;
 }
-.legend .title{
+.legend .title {
   text-align: center;
   margin-bottom: 3rem;
 }
-.legend .description{
+.legend .description {
   line-height: 1.7;
 }
 
-
-@media only screen and (min-width: 600px){
-  .md-flex{
+@media only screen and (min-width: 600px) {
+  .md-flex {
     display: flex;
   }
-
 
   .legend-column {
     width: 40%;
     min-width: 300px;
   }
-  .map-column{
+  .map-column {
     width: 55%;
     align-self: center;
   }
 }
 
-#world  g:not(:hover) > polygon{
-  fill: rgba(80,80,80,.6);
-  stroke: rgba(0,0,0,0);
-}
-/* 
-#world:hover  g:not(:hover) > polygon{
-  fill: rgba(0,0,0,.8);
+/* #world g:not(:hover) > g {
+  fill: rgba(80, 80, 80, 0.3);
 } */
+
+/* #world:hover g:not(:hover) > polygon {
+  fill: rgba(0, 0, 0, 0.8);
+} */
+
+#rivers {
+  fill: none;
+  stroke: blue;
+  stroke-width: 3;
+}
+#icons {
+  fill: #8b4513;
+  stroke: black;
+}
