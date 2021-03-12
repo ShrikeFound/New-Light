@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap");
+
 :root {
   --water-color: #3fa9f5;
   --hill-color: #c69c6d;
@@ -10,13 +12,18 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cinzel Decorative", cursive;
 }
 
 code {
@@ -89,13 +96,13 @@ polygon {
   margin-top: 3rem;
   width: 90%;
   /* max-width: 1160px; */
-  height: 90vh;
-  /* max-height: 90vh; */
+  min-height: 90vh;
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
-  grid-template-columns: 25% 50% 1fr;
+  grid-template-columns: 2fr 3fr 1fr;
   gap: 5%;
+  /* overflow-y: hidden; */
 }
 .map-feature {
   stroke: white;
@@ -105,16 +112,12 @@ polygon {
   fill: #000;
 }
 
-.description {
-  /* width: 90%; */
-  margin: 0 auto;
-}
 .description .title {
   text-align: center;
   margin-bottom: 3rem;
 }
-.description .description {
-  line-height: 1.7;
+.description {
+  line-height: 1.6;
 }
 .legend-container {
   height: 100%;
@@ -126,26 +129,35 @@ polygon {
   display: block;
   position: absolute;
 }
+.legend text {
+  stroke: white;
+  font-weight: 300;
+}
 @media only screen and (min-width: 600px) {
   .md-flex {
     display: grid;
   }
 
   .map-column {
-    align-self: center;
+    /* align-self: center; */
     order: 2;
+    /* border: 2px solid orange; */
+    max-height: 100%;
   }
   .description-column {
-    align-self: center;
+    /* align-self: center; */
+    padding: 2rem;
     order: 1;
+    /* border: 2px solid orange; */
   }
   .legend-column {
     order: 4;
+    /* border: 2px solid orange; */
   }
 }
 
 #world:hover > g:not(:hover) > polygon {
-  fill: rgba(0, 0, 0, 0.9);
+  fill: rgba(0, 0, 0, 0.75);
 }
 
 #rivers {

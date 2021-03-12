@@ -4,7 +4,7 @@ import Legend from './Legend.js'
 
 const Map = () => {
   const defaultTitle = "The Sea Ringed World"
-  const defaultDescription = "sup."
+  const defaultDescription = "<p>The Sea Ringed World is filled with various factions, tribes, and cities. Three city-states act as ruling parties, eschewing outright warfare in favor of politics and social control: Sochitlan, The City of Flowers; Tyr, the City of Light; Athon, the City of Rust.</p><p> All other cities, factions, and tribes pay tribute to these 3 cities states, who divide the tribute according to their respective power and standing.</p>"
   const [title,setTitle] = useState(defaultTitle);
   const [description,setDescription] = useState(defaultDescription);
   const [subTitle,setSubTitle] = useState(null);
@@ -55,7 +55,19 @@ const Map = () => {
             <description>{defaultDescription}</description>
             <g id="sochitlan" ref={sochitlan} onMouseEnter={()=> handleMouseEnter(sochitlan)}>
               <title>Sochitlan</title>
-              <descrition>sochitlan's description</descrition>
+              <descrition>
+                <p>Sochitlan, The City of Flowers, is the largest and most powerful city-state.
+                It enjoys dominion of the entire central valley of the world,
+                including the great lake that extends from the western mountain range to the south and almost all the way to the east.
+                The capitol itself rests in the center of this vast lake.
+                </p>
+                <p>
+                Sochitlan is a place of commerce.
+                Merchants sell their wares on boats, travelling within the lake and up the rivers that connect Sochitlan to the rest of the world.
+                All rivers -- or at least, all the ones that matter-- lead to Sochitlan. Sochitlan receives the lion's share of tribute.
+                </p>
+
+              </descrition>
             <g id="sochitlan-hexes">
               
                 <g id="waters" data-name="waters">
@@ -198,7 +210,22 @@ const Map = () => {
             </g>
             <g id="athon" ref={athon} onMouseEnter={()=> handleMouseEnter(athon)}>
               <title>Athon</title>
-              <description>This is the athon description</description>
+              <description>
+                <p>
+                  Athon, the City of Rust, lays claim to the northwestern deserts and, so it says,
+                  much of the western mountain ranges --  though these ranges are always in contention among the inhabitants.
+                  After having defeated the previous ruling city, Athon is known as the military center of the land, and as such enjoys the smallest portion of tribute.
+                </p>
+                <p>
+                The deserts where Athon's capitol lies are flecked bountifully with flecks of rusted iron and less so with flecks of gold and other precious materials,
+                giving the ground a red hue and a telltale glint at dawn and dusk. Landmarks and ruins of ancient civilizations are hidden and revealed as the sands shift,
+                making navigation through Athon difficult and dangerous.
+                </p>
+                <p>
+                  Though Sochitlan and Tyr are the more prestigious cities, Athon is the oldest, and most ambitious, of the three.
+                </p>
+                
+              </description>
               <g id="athon-hexes"><g id="marshes-2" data-name="marshes"><polygon points="233.38 273.01 218.38 273.01 210.88 286.01 218.38 299 233.38 299 240.88 286.01 233.38 273.01" />
 <polygon points="244.38 258.01 259.38 258.01 266.89 271 259.38 284 244.38 284 236.88 271 244.38 258.01" />
 <polygon points="192.39 318 207.39 318 214.89 330.99 207.39 343.98 192.39 343.98 184.89 330.99 192.39 318" />
@@ -252,7 +279,20 @@ const Map = () => {
           </g>
           <g id="iwitlan" ref={iwitlan} onMouseEnter={()=> handleMouseEnter(iwitlan)}>
               <title>Iwitlan</title>
-              <description>Iwitlan's Description</description>
+              <description>
+                <p>
+                  Iwitlan, the City of Feathers, is a roaming city whose influence extends throughout the jungle it travels through.
+                  All settlements build their cities atop and hanging from the enormous glass beasts that wander through the jungle,
+                  but Iwitlan is built on the largest and most dangerous: A giant glass moth known as Ghost Eye.
+                  Iwitlan is a rich and well defended city, once favored as one of the ruling class.
+                </p>
+                <p>
+                They have access to plentiful biological numenera and other riches, and all of the cities move undetected through the jungle, making an attack difficult.
+                They were defeated by the City of Rust only through trickery,
+                and it is only because of their sense of honor and shame that they endure their new position as tributary.
+                </p>
+
+              </description>
             <g id="iwitlan-hexes">
               <g id="plains-2" data-name="plains"><polygon points="660.39 498 675.39 498 682.89 510.99 675.39 523.98 660.39 523.98 652.89 510.99 660.39 498" />
 <polygon points="649.39 483 634.39 483 626.89 495.99 634.39 508.98 649.39 508.98 656.89 495.99 649.39 483" />
@@ -325,7 +365,20 @@ const Map = () => {
           </g>
           <g id="tyr" ref={tyr} onMouseEnter={()=> handleMouseEnter(tyr)}>
               <title>Tyr</title>
-              <description>Tyr's description</description>
+              <description>
+                <p>Tyr, the City of Light, resides in the northeastern mountain range, extending south and west to meet Sochitlan, and east to reach the end of the world.
+                Tyr is where the Temple of Light resides, and as such is the astronomical and spiritual leader of the world.
+                </p>
+                <p>
+                  The Light Eaters, keepers of the Temple of Light, read the night sky for portents, and leaders of factions across the world come for guidance.
+                  Though the mountains make attacking Tyr difficult, the city-state doesn't boast a strong military force.
+                  Their main protection against invaders  is their favor with the Mute God, and this seems to be in question because of recent events.
+                </p>
+                <p>
+                Tyr receives only slightly more  tribute than Athon.
+                </p>
+                
+              </description>
             <g id="tyr-hexes"><g id="waters-3" data-name="waters"><polygon points="660.39 138 675.39 138 682.89 150.99 675.39 163.98 660.39 163.98 652.89 150.99 660.39 138" />
 <polygon points="545.39 63 530.39 63 522.89 75.99 530.39 88.98 545.39 88.98 552.89 75.99 545.39 63" />
 </g><g id="plains-3" data-name="plains"><polygon points="701.39 123 686.39 123 678.89 135.99 686.39 148.98 701.39 148.98 708.89 135.99 701.39 123" />
@@ -385,7 +438,16 @@ const Map = () => {
           </g>
           <g id="burnished-plains" ref={burnishedPlains} onMouseEnter={()=> handleMouseEnter(burnishedPlains)}>
               <title>The Burnished Plains</title>
-              <description>A description</description>
+              <description>
+                <p>
+                  Those who inhabit the Burnished Plains live a difficult and dangerous life. Sheets of polised metal cover iron and the precious metals that form hills,mountains,and canyons that dot the landscape.
+                  ferro-organic giant flora and plentiful fauna thrive on the plains, surviving through unknown means and providing the human inhabitants with dangerous sources food and resources.
+                </p>
+                <p>
+                  The plain's inhabitants live nomadically to take advantage of the regular paths the beasts of the land take. The three largest houses are House Kratyss, House Deseia, and House Haolus.
+                </p>
+
+              </description>
             <g id="burnished-plains-hexes"><g id="waters-4" data-name="waters"><polygon points="181.39 483 166.39 483 158.89 495.99 166.39 508.98 181.39 508.98 188.89 495.99 181.39 483" />
 <polygon points="129.39 393 114.39 393 106.89 405.99 114.39 418.98 129.39 418.98 136.89 405.99 129.39 393" />
 <polygon points="181.39 333 166.39 333 158.89 345.99 166.39 358.98 181.39 358.98 188.89 345.99 181.39 333" />
@@ -454,7 +516,15 @@ const Map = () => {
 </g></g><polygon id="burnished-plains-outline" points="208.54 466 191.23 466 191.2 465.99 182.54 451 182.54 450.98 191.2 435.99 182.54 421 182.54 420.98 191.2 405.99 182.54 391 182.54 390.98 191.2 375.99 182.54 361 182.54 360.98 191.2 345.99 182.54 331 182.54 330.98 191.2 315.99 182.54 301 182.54 300.98 191.2 285.99 182.54 271 165.23 271 156.58 285.99 156.54 286 139.23 286 139.2 285.99 130.54 271 113.23 271 104.58 285.99 104.54 286 87.23 286 87.2 285.99 78.54 271 61.23 271 52.58 285.99 52.54 286 35.23 286 26.58 300.99 35.23 315.98 35.23 316 26.58 330.99 35.23 345.98 35.23 346 26.58 360.99 35.23 375.98 35.23 376 26.58 390.99 35.23 405.98 35.23 406 26.58 420.99 26.54 421 9.23 421 0.58 435.99 9.23 450.98 9.23 451 0.58 465.99 9.23 480.98 9.23 481 0.58 495.99 9.23 510.98 26.54 510.98 26.58 510.99 35.23 525.98 52.54 525.98 52.58 525.99 61.23 540.98 61.23 541 52.58 555.99 61.23 570.98 78.54 570.98 78.58 570.99 87.23 585.98 104.54 585.98 113.2 570.99 113.23 570.98 130.54 570.98 130.58 570.99 139.23 585.98 156.54 585.98 165.2 570.99 165.23 570.98 182.54 570.98 191.2 555.99 182.54 541 182.54 540.98 191.2 525.99 191.23 525.98 208.54 525.98 217.2 510.99 217.23 510.98 234.54 510.98 243.2 495.99 234.54 481 234.54 480.98 243.2 465.99 234.54 451 217.23 451 208.58 465.99 208.54 466" />
           </g><g id="elyss" ref={elyss} onMouseEnter={()=> handleMouseEnter(elyss)}>
               <title>Elyss</title>
-              <description>Elyss' Description</description>
+              <description>
+                <p>
+                  Elyss, Land of Burning Water, is an area of land dotted with Prismatic Hot Springs, shimmering pools of water that erupt from beneath the earth.
+                  The hot springs are tended by a collection of families, and the title of ruling family changes often as leaders rise and fall.
+                </p>   
+                <p>The temperatures and depths of the hot springs vary, ranging from pleasantly hot to skin-melting, knee deep to abyssal.
+                  Without exception, each shimmering pool acts as a portal for anything that reaches its depths, and those who both survive the journey and return are hailed as heroes.
+              </p>   
+              </description>
             <g id="elyss-hexes"><g id="marshes-3" data-name="marshes"><polygon points="504.39 408 519.39 408 526.89 420.99 519.39 433.98 504.39 433.98 496.89 420.99 504.39 408" />
 <polygon points="493.39 393 478.39 393 470.89 405.99 478.39 418.98 493.39 418.98 500.89 405.99 493.39 393" />
 <polygon points="348.39 378 363.39 378 370.89 390.99 363.39 403.98 348.39 403.98 340.89 390.99 348.39 378" />
@@ -496,18 +566,20 @@ const Map = () => {
           </g><g id="shabara" ref={shabara} onMouseEnter={()=> handleMouseEnter(shabara)} onClick={()=> handleMouseEnter(shabara)}>
               <title>Shabara</title>
               <description>
-                Shabara, Land of Broken Sky, is a dark world where the sun loses its power.
+                <p>Shabara, Land of Broken Sky, is a dark world where the sun loses its power.
                 Giant Floating Plates made of the same material as the Emperor's Palace hang high in the sky,
                 shrouding the land in gloom as they slowly shift and turn.
-                
+                </p>
+                <p>
+                <p>
                 The plates are broken and fragmented,
                 and areas between these shapes where light filters through are somehow brighter and
                 hotter than the rest of the World and burn those who cross.
-                
+                </p>
                 Citizens of the Land of Broken Sky do not recognize the ruling cities and pay no tribute,
                 and incursions into the Land of Broken Sky have proved devastatingly unsuccessful.
                 Nevertheless, its citizens are content to trade and socialize with members of the tributaries.
-                 
+                 </p>
                 </description>
             <g id="shabara-hexes"><g id="deserts-2" data-name="deserts"><polygon points="400.39 618 415.39 618 422.89 630.99 415.39 643.98 400.39 643.98 392.89 630.99 400.39 618" />
 <polygon points="597.39 633 582.39 633 574.89 645.99 582.39 658.98 597.39 658.98 604.89 645.99 597.39 633" />
