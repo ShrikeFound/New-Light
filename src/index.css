@@ -88,12 +88,13 @@ polygon {
 .container {
   margin-top: 3rem;
   width: 90%;
-  max-width: 1160px;
+  /* max-width: 1160px; */
   height: 90vh;
-  max-height: 90vh;
+  /* max-height: 90vh; */
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
+  grid-template-columns: 25% 50% 1fr;
   gap: 5%;
 }
 .map-feature {
@@ -104,30 +105,42 @@ polygon {
   fill: #000;
 }
 
-.legend {
+.description {
   /* width: 90%; */
   margin: 0 auto;
 }
-.legend .title {
+.description .title {
   text-align: center;
   margin-bottom: 3rem;
 }
-.legend .description {
+.description .description {
   line-height: 1.7;
 }
-
+.legend-container {
+  height: 100%;
+  max-height: 100%;
+  position: relative;
+}
+.legend {
+  width: 100%;
+  display: block;
+  position: absolute;
+}
 @media only screen and (min-width: 600px) {
   .md-flex {
-    display: flex;
+    display: grid;
   }
 
-  .legend-column {
-    width: 40%;
-    min-width: 300px;
-  }
   .map-column {
-    width: 55%;
     align-self: center;
+    order: 2;
+  }
+  .description-column {
+    align-self: center;
+    order: 1;
+  }
+  .legend-column {
+    order: 4;
   }
 }
 

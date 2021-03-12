@@ -2,7 +2,7 @@ import React from 'react'
 
 const Legend = () => {
   return (
-    <svg viewBox="0 0 250 330" id="legend" style={{backgroundColor: "rgba(255,255,255,.1)"}}>
+    <svg viewBox="0 0 250 330" id="legend" className="legend" style={{backgroundColor: "rgba(255,255,255,.1)"}}>
     <text transform="translate(90,40)" fill="white" stroke="white">LEGEND</text>
       <g transform="translate(20,80)">
         <polygon transform="translate(-130,-100)" className="jungles-icon" points="140.39 78 155.39 78 162.89 90.99 155.39 103.98 140.39 103.98 132.89 90.99 140.39 78" />

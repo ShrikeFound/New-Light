@@ -44,7 +44,10 @@ const Map = () => {
   }
   return (
     <div className="container row md-flex">
-      <div className="column map-column">
+
+
+      
+      <div className="map-column">
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 738.35 721.48">
           <g id="world" onMouseLeave={clearMap}>
@@ -490,9 +493,22 @@ const Map = () => {
 <polygon points="348.39 408 363.39 408 370.89 420.99 363.39 433.98 348.39 433.98 340.89 420.99 348.39 408" />
 <polygon points="337.39 393 322.39 393 314.89 405.99 322.39 418.98 337.39 418.98 344.89 405.99 337.39 393" />
 </g></g><polygon id="elyss-outline" points="520.54 346 503.23 346 494.58 360.99 503.23 375.98 503.23 376 494.58 390.99 494.54 391 477.23 391 468.58 405.99 468.54 406 451.23 406 442.58 420.99 442.54 421 425.23 421 425.2 420.99 416.54 406 399.23 406 399.2 405.99 390.54 391 373.23 391 373.2 390.99 364.54 376 347.23 376 338.58 390.99 338.54 391 321.23 391 312.58 405.99 321.23 420.98 321.23 421 312.58 435.99 321.23 450.98 321.23 451 312.58 465.99 321.23 480.98 321.23 481 312.58 495.99 321.23 510.98 338.54 510.98 347.2 495.99 347.23 495.98 364.54 495.98 364.58 495.99 373.23 510.98 390.54 510.98 390.58 510.99 399.23 525.98 416.54 525.98 425.2 510.99 425.23 510.98 442.54 510.98 442.58 510.99 451.23 525.98 468.54 525.98 477.2 510.99 477.23 510.98 494.54 510.98 503.2 495.99 503.23 495.98 520.54 495.98 529.2 480.99 529.23 480.98 546.54 480.98 555.2 465.99 546.54 451 546.54 450.98 555.2 435.99 546.54 421 546.54 420.98 555.2 405.99 546.54 391 546.54 390.98 555.2 375.99 546.54 361 546.54 360.98 555.2 345.99 546.54 331 529.23 331 520.58 345.99 520.54 346" />
-          </g><g id="shabara" ref={shabara} onMouseEnter={()=> handleMouseEnter(shabara)}>
+          </g><g id="shabara" ref={shabara} onMouseEnter={()=> handleMouseEnter(shabara)} onClick={()=> handleMouseEnter(shabara)}>
               <title>Shabara</title>
-              <description>Subaru</description>
+              <description>
+                Shabara, Land of Broken Sky, is a dark world where the sun loses its power.
+                Giant Floating Plates made of the same material as the Emperor's Palace hang high in the sky,
+                shrouding the land in gloom as they slowly shift and turn.
+                
+                The plates are broken and fragmented,
+                and areas between these shapes where light filters through are somehow brighter and
+                hotter than the rest of the World and burn those who cross.
+                
+                Citizens of the Land of Broken Sky do not recognize the ruling cities and pay no tribute,
+                and incursions into the Land of Broken Sky have proved devastatingly unsuccessful.
+                Nevertheless, its citizens are content to trade and socialize with members of the tributaries.
+                 
+                </description>
             <g id="shabara-hexes"><g id="deserts-2" data-name="deserts"><polygon points="400.39 618 415.39 618 422.89 630.99 415.39 643.98 400.39 643.98 392.89 630.99 400.39 618" />
 <polygon points="597.39 633 582.39 633 574.89 645.99 582.39 658.98 597.39 658.98 604.89 645.99 597.39 633" />
 <polygon points="597.39 603 582.39 603 574.89 615.99 582.39 628.98 597.39 628.98 604.89 615.99 597.39 603" />
@@ -816,18 +832,26 @@ const Map = () => {
           </g>
         </svg>
 
-
-
-
-        </div>
-      
-      <div className="legend-column">
-      
+              </div>
+              
+      <div className="description-column">
+        
         <Description title={subTitle ? subTitle : title} description={subDescription ? subDescription : description} />
-        <Legend />  
-      
+
       </div>
+
+
+
+
+      
+          <div className="legend-column">
+          <div className="legend-container">
+          <Legend />
+          </div>
+          </div>      
             
+
+
       </div>
     
 
