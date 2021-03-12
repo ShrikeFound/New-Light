@@ -1,3 +1,13 @@
+:root {
+  --water-color: #3fa9f5;
+  --hill-color: #c69c6d;
+  --desert-color: #f15a24;
+  --marsh-color: #662d91;
+  --plain-color: #fbb03b;
+  --jungle-color: #009245;
+  --burnished-plain-color: lightgrey;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -121,20 +131,47 @@ polygon {
   }
 }
 
-/* #world g:not(:hover) > g {
-  fill: rgba(80, 80, 80, 0.3);
-} */
-
-/* #world:hover g:not(:hover) > polygon {
-  fill: rgba(0, 0, 0, 0.8);
-} */
+#world:hover > g:not(:hover) > polygon {
+  fill: rgba(0, 0, 0, 0.9);
+}
 
 #rivers {
   fill: none;
-  stroke: blue;
+  stroke: var(--water-color);
   stroke-width: 3;
 }
 #icons {
   fill: #8b4513;
   stroke: black;
+}
+g[data-name="marshes"] > polygon,
+.marshes-icon {
+  fill: var(--marsh-color);
+}
+
+g[data-name="waters"] > polygon,
+.waters-icon {
+  fill: var(--water-color);
+}
+
+g[data-name="hills"] > polygon,
+.hills-icon {
+  fill: var(--hill-color);
+}
+
+g[data-name="plains"] > polygon,
+.plains-icon {
+  fill: var(--plain-color);
+}
+g[data-name="deserts"] > polygon,
+.desert-icon {
+  fill: var(--desert-color);
+}
+g[data-name="jungles"] > polygon,
+.jungles-icon {
+  fill: var(--jungle-color);
+}
+g[data-name="burnished-plains"] > polygon,
+.burnished-plains-icon {
+  fill: var(--burnished-plain-color);
 }
