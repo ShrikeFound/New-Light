@@ -117,7 +117,7 @@ polygon {
   margin-bottom: 3rem;
 }
 .description {
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .legend-container {
   height: 100%;
@@ -146,7 +146,7 @@ polygon {
   }
   .description-column {
     /* align-self: center; */
-    padding: 2rem;
+    padding: 0 1rem;
     order: 1;
     /* border: 2px solid orange; */
   }
