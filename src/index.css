@@ -8,17 +8,19 @@
   --plain-color: #fbb03b;
   --jungle-color: #009245;
   --burnished-plain-color: lightgrey;
+  --black: #232323;
 }
 
 body {
   margin: 0;
+}
+.App {
+  background-color: var(--black);
+  color: white;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  color: white;
 }
-
 h1,
 h2,
 h3,
@@ -92,7 +94,7 @@ polygon {
   fill: rgba(40, 40, 40, 1);
 } */
 
-.container {
+.c-container {
   margin-top: 3rem;
   width: 90%;
   /* max-width: 1160px; */
@@ -100,7 +102,7 @@ polygon {
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
-  grid-template-columns: 2fr 3fr 1fr;
+  grid-template-columns: 5.5fr 6fr 1.5fr;
   gap: 5%;
   /* overflow-y: hidden; */
 }
@@ -134,7 +136,7 @@ polygon {
   font-weight: 300;
 }
 @media only screen and (min-width: 600px) {
-  .md-flex {
+  .grid {
     display: grid;
   }
 
@@ -199,4 +201,26 @@ g[data-name="jungles"] > polygon,
 g[data-name="burnished-plains"] > polygon,
 .burnished-plains-icon {
   fill: var(--burnished-plain-color);
+}
+
+header#header {
+  background-color: var(--black);
+  color: white;
+}
+
+.home {
+  min-height: 92vh;
+}
+div.dropdown-menu {
+  background-color: #343434;
+  color: white;
+}
+/* div.dropdown-menu a {
+  color: white;
+} */
+div.dropdown-menu .dropdown-item {
+  color: white;
+}
+div.dropdown-menu .dropdown-item:hover {
+  background-color: #434343;
 }

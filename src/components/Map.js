@@ -43,7 +43,7 @@ const Map = () => {
     setDescription(defaultDescription);
   }
   return (
-    <div className="container row md-flex">
+    <div className="c-container grid">
 
 
       
