@@ -1,10 +1,16 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const Home = () => {
   return (
-    <div className="home">
-      <h1>Home</h1>
-    </div>
+    <Container className="fullpage">
+      <p className="code">
+        The awareness computes. With crafted hands you must answer.
+      </p>
+      <p className="code">
+        Verdance computes.
+      </p>
+    </Container>
   )
 }
 

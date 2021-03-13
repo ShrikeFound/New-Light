@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 :root {
   --water-color: #3fa9f5;
   --hill-color: #c69c6d;
@@ -24,7 +24,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.navbar-brand {
   font-family: "Cinzel Decorative", cursive;
 }
 
@@ -135,7 +136,7 @@ polygon {
   stroke: white;
   font-weight: 300;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .grid {
     display: grid;
   }
@@ -208,19 +209,33 @@ header#header {
   color: white;
 }
 
-.home {
-  min-height: 92vh;
+.fullpage {
+  min-height: 95vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
 }
 div.dropdown-menu {
   background-color: #343434;
   color: white;
 }
-/* div.dropdown-menu a {
-  color: white;
-} */
+
 div.dropdown-menu .dropdown-item {
   color: white;
 }
-div.dropdown-menu .dropdown-item:hover {
+
+div.dropdown-menu .dropdown-item.disabled {
+  color: #888;
+}
+
+div.dropdown-menu .dropdown-item:hover,
+div.dropdown-menu .dropdown-item:active,
+div.dropdown-menu .dropdown-item:focus {
   background-color: #434343;
+}
+
+.code {
+  font-family: "Syne Mono", monospace;
+  color: white;
+  font-size: 25px;
 }

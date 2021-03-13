@@ -448,7 +448,9 @@ const Map = () => {
                 </p>
 
               </description>
-            <g id="burnished-plains-hexes"><g id="waters-4" data-name="waters"><polygon points="181.39 483 166.39 483 158.89 495.99 166.39 508.98 181.39 508.98 188.89 495.99 181.39 483" />
+              <g id="burnished-plains-hexes">
+                <g id="waters-4" data-name="waters">
+                  <polygon points="181.39 483 166.39 483 158.89 495.99 166.39 508.98 181.39 508.98 188.89 495.99 181.39 483" />
 <polygon points="129.39 393 114.39 393 106.89 405.99 114.39 418.98 129.39 418.98 136.89 405.99 129.39 393" />
 <polygon points="181.39 333 166.39 333 158.89 345.99 166.39 358.98 181.39 358.98 188.89 345.99 181.39 333" />
 </g><g id="burnished-plains-2" data-name="burnished-plains"><polygon points="140.39 348 155.39 348 162.89 360.99 155.39 373.98 140.39 373.98 132.89 360.99 140.39 348" />
