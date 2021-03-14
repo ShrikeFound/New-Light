@@ -210,6 +210,9 @@ header#header {
   background-color: var(--black);
   color: white;
 }
+nav.navbar{
+  background-color: rgba(0,0,0,.5);
+}
 
 .fullpage {
   min-height: 100vh;
@@ -228,10 +231,13 @@ header#header {
   margin: 0 auto;
 }
 
-
+.npcs{
+  padding-top: 5rem;
+}
 div.dropdown-menu {
-  background-color: #343434;
+  background-color: rgba(0,0,0,.7);
   color: white;
+  border: none;
 }
 
 div.dropdown-menu .dropdown-item {
@@ -245,7 +251,7 @@ div.dropdown-menu .dropdown-item.disabled {
 div.dropdown-menu .dropdown-item:hover,
 div.dropdown-menu .dropdown-item:active,
 div.dropdown-menu .dropdown-item:focus {
-  background-color: #434343;
+  background-color: rgba(0,0,0,.9);
 }
 
 .code {
@@ -367,7 +373,8 @@ div.dropdown-menu .dropdown-item:focus {
 
 
 }
-
-.section .title{
-  margin-top: 2rem;
+.title{
+  margin-top: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
