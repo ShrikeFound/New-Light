@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/new-light-site/static/css/main.c2eb9ee2.chunk.css",
+    "main.js": "/new-light-site/static/js/main.0b6a1dcd.chunk.js",
+    "main.js.map": "/new-light-site/static/js/main.0b6a1dcd.chunk.js.map",
+    "runtime-main.js": "/new-light-site/static/js/runtime-main.e91a1f5a.js",
+    "runtime-main.js.map": "/new-light-site/static/js/runtime-main.e91a1f5a.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/new-light-site/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.4d0a88ea.chunk.js": "/new-light-site/static/js/2.4d0a88ea.chunk.js",
+    "static/js/2.4d0a88ea.chunk.js.map": "/new-light-site/static/js/2.4d0a88ea.chunk.js.map",
+    "index.html": "/new-light-site/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/new-light-site/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.c2eb9ee2.chunk.css.map": "/new-light-site/static/css/main.c2eb9ee2.chunk.css.map",
+    "static/js/2.4d0a88ea.chunk.js.LICENSE.txt": "/new-light-site/static/js/2.4d0a88ea.chunk.js.LICENSE.txt",
+    "static/media/andree-wallin-1117-2.ddfa8bbe.jpg": "/new-light-site/static/media/andree-wallin-1117-2.ddfa8bbe.jpg",
+    "static/media/baolo_the_boombox.3b636155.png": "/new-light-site/static/media/baolo_the_boombox.3b636155.png",
+    "static/media/corvus-2.fdc212d7.jpg": "/new-light-site/static/media/corvus-2.fdc212d7.jpg",
+    "static/media/daliah.947aa8c6.png": "/new-light-site/static/media/daliah.947aa8c6.png",
+    "static/media/elyssa.949b3548.jpg": "/new-light-site/static/media/elyssa.949b3548.jpg",
+    "static/media/ezra_the_apostle.0e01e446.jpg": "/new-light-site/static/media/ezra_the_apostle.0e01e446.jpg",
+    "static/media/template.c56af100.svg": "/new-light-site/static/media/template.c56af100.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e91a1f5a.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.4d0a88ea.chunk.js",
+    "static/css/main.c2eb9ee2.chunk.css",
+    "static/js/main.0b6a1dcd.chunk.js"
+  ]
+}
