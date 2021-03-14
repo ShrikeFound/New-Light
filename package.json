@@ -1,6 +1,6 @@
 {
-  "name": "new-light-site",
-  "homepage": "new-light-site",
+  "name": "new-light",
+  "homepage": "new-light",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
