@@ -11,6 +11,10 @@ import BurnishedPlains from './components/BurnishedPlains.js';
 import Elyss from './components/Elyss.js';
 import Shabara from './components/Shabara.js';
 import FourOhFour from './components/FourOhFour.js';
+import RulingCities from './components/RulingCities.js';
+import Tributaries from './components/Tributaries.js';
+import UnalliedFactions from './components/UnalliedFactions.js';
+import Artifacts from './components/Artifacts.js';
 
 function App() {
   return (
@@ -55,10 +59,27 @@ function App() {
           <Route path="/shabara">
           <Shabara/>
           </Route>
+
+          <Route path="/ruling-cities">
+            <RulingCities/>
+          </Route>
+
+          <Route path="/tributaries">
+            <Tributaries/>
+          </Route>
+
+          <Route path="/unallied-factions">
+            <UnalliedFactions />
+          </Route>
+
+          <Route path="/artifacts">
+            <Artifacts/>
+          </Route>
+
+          <Route path="*">
+            <FourOhFour />
+          </Route>
           
-        <Route path="*">
-          <FourOhFour/>
-        </Route>
 
       </Switch>
       </div>

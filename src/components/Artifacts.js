@@ -1,12 +1,12 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 
-const Shabara = () => {
+const Artifacts = () => {
   return (
     <Container className="fullpage">
-      <h1>Shabara, Land of Broken Sky</h1>
+      <h1>Artifacts</h1>
     </Container>
   )
 }
 
-export default Shabara
+export default Artifacts
