@@ -530,13 +530,13 @@ const Map = () => {
 <polygon points="88.39 468 103.39 468 110.89 480.99 103.39 493.98 88.39 493.98 80.89 480.99 88.39 468" />
 <polygon points="77.39 453 62.39 453 54.89 465.99 62.39 478.98 77.39 478.98 84.89 465.99 77.39 453" />
 <polygon points="88.39 438 103.39 438 110.89 450.99 103.39 463.98 88.39 463.98 80.89 450.99 88.39 438" />
-                  <polygon className="POI" points="77.39 423 62.39 423 54.89 435.99 62.39 448.98 77.39 448.98 84.89 435.99 77.39 423">
+                  <polygon className="POI" points="77.39 423 62.39 423 54.89 435.99 62.39 448.98 77.39 448.98 84.89 435.99 77.39 423" onMouseEnter={(e) => handleMouseEnterSub(e)} onMouseLeave={() => handleMouseLeaveSub()}>
                     <title>Last Gasp Gorge</title>
                     <description>
                       <p>Last Gasp Gorge is a wide chasm scratched into the earth by a long forgotten, unthinkably large creature. Heavy gases have filled the lower pits of the gorge, making breathing impossible for humans.
                       </p>
                       <p>
-                        Only one person has every been able to traverse the gorge; No others have returned. It is said that world-shaking secrets and powerful numenera lay hidden in its depths. The party seeks to explore it in search of a way to survive the coming apocalypse.
+                        Only one person has every been able to traverse the gorge. No others have returned. It is said that world-shaking secrets and powerful numenera lay hidden in its depths. The party seeks to explore it in search of a way to survive the coming apocalypse.
                       </p>
                     </description>
                   </polygon>
