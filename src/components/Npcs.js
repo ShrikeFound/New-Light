@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container,Card,Button } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import BootstrapCard from './BootstrapCard'
 
 const Npcs = () => {
@@ -20,6 +20,7 @@ const Npcs = () => {
     { characterName: "Ryll", title: "Haolus Fighter", description: "A warrior from House Haolus with a beef against Ezra. Tried to fight the slave buyers by himself." },
     { characterName: "Ilham", title: "Mute Priest", description: "A mute priest who was sold into slavery." },
     { characterName: "Hara", title: "The Reflection", description: "Leader of the Weeping Tower and House Deseia. Tasked the group with finding out why their Caffa herds were irritated." },
+    { characterName: "Tecat", title: "Son of Ibril", description: "Son of the empress and leader of  B Squad." },
     
   ]
 

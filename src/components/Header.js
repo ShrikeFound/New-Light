@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar,Nav,NavDropdown, Container } from 'react-bootstrap'
+import { Navbar,Nav,NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
@@ -43,7 +43,7 @@ const Header = () => {
 
     </Nav>
     <Nav>
-      <Link className="nav-link" to="/map">World</Link>
+      <Link className="nav-link" to="/map">Map</Link>
       <Link className="nav-link" to="/rules">Rules</Link>
     </Nav>
   </Navbar.Collapse>

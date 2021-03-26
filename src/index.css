@@ -384,3 +384,6 @@ div.dropdown-menu .dropdown-item:focus {
   stroke: gold;
   stroke-width: 2;
 }
+.POI:hover {
+  fill: gold;
+}
