@@ -518,7 +518,7 @@ const Map = () => {
 <polygon points="129.39 363 114.39 363 106.89 375.99 114.39 388.98 129.39 388.98 136.89 375.99 129.39 363" />
 <polygon points="129.39 333 114.39 333 106.89 345.99 114.39 358.98 129.39 358.98 136.89 345.99 129.39 333" />
                   <polygon className="POI" points="140.39 318 155.39 318 162.89 330.99 155.39 343.98 140.39 343.98 132.89 330.99 140.39 318" onMouseEnter={(e) => handleMouseEnterSub(e)} onMouseLeave={() => handleMouseLeaveSub()} >
-                    <title>Planetfall: <span style={{color: "red"}}>Night Axe</span></title>
+                    <title>Breach: <span style={{color: "red"}}>Night Axe</span></title>
                     <description>
                       <p>
                         On a mission from Hara and the Weeping Tower, the party ventured west to visit a meeting spot for the local Caffa herds. The herds had been disturbed, and by what the party was to find out.
